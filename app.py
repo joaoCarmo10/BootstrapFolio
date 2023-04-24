@@ -86,18 +86,19 @@ grid = html.H4( "Bem-vindo(a)",style={"text-align": "center", "margin-top":"50px
 grid1 = html.Div(
     dbc.Row([
         dbc.Col(
-            html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Autônomo de Business Intelligence")
+            html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Autônomo de Business Intelligence.")
         ,width={
                 'size': 10, 
                 'order': 1, 
                 'offset': 1,
-                }, md=5),
+                }, md=4),
         dbc.Col(
-            card
+            html.H1("Foto Profissional")
             ,width={
                 'size':10,
-                'order':2,    
-            }, md=5
+                'order':2,
+                'offset':1
+            }, md=4
         )
     ]), style={'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'height': '50vh', 'text-align':'justify'}
     
