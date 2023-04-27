@@ -49,7 +49,7 @@ grid1 = dbc.Container(
             html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Autônomo de Business Intelligence.")
         ]),
         dbc.Col([
-            html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo", height="100px", style={"margin-left": "10px", "border-radius": "50%", "text-align": "center", "margin-top": "50px"}))
+            html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo", height="200px", style={"margin-left": "10px", "border-radius": "50%", "text-align": "center", "margin-top": "50px"}))
         ], style={'display': 'flex', 'align-items': 'center', 'justify-content': 'center'})
     ], style={'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'height': '50vh', 'text-align': 'justify'}
 ))
