@@ -1,5 +1,7 @@
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
+from dash.dependencies import Input, Output, State
+import time
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.QUARTZ, "/Assets/style.css"])
@@ -46,7 +48,7 @@ grid1 = dbc.Container(
     dbc.Row([
         dbc.Col([
             html.P(html.H5("Bem-vindo(a), ", style={"text-align": "center", "margin-top": "50px"})),
-            html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Autônomo de Business Intelligence.")
+            html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Freelancer de Business Intelligence.")
         ]),
         dbc.Col([
             html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo", height="200px", style={"margin-left": "10px", "border-radius": "50%", "text-align": "center", "margin-top": "50px"}))

@@ -1,6 +1,6 @@
 /*Fonts ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .card {
-    width: 60%;
+    width: 70%;
     height: 80px;
     margin-top: 20px;
     margin-bottom: 80px;
@@ -67,7 +67,7 @@ input {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #1a1a1a, #2c2c2c);
+    background: linear-gradient(-4deg, lightblue,#1a1a1a, blue, #2c2c2c);
     /*background: linear-gradient(-4deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
