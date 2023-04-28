@@ -44,51 +44,50 @@ footer = dbc.Container(
     }
 )
 
-grid1 = dbc.Container(
-    dbc.Row([
-        dbc.Col([
-            html.P(html.H5("Bem-vindo(a), ", style={"text-align": "center", "margin-top": "50px"})),
-            html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Freelancer de Business Intelligence.")
-        ]),
-        dbc.Col([
-            html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo", height="200px", style={"margin-left": "10px", "border-radius": "50%", "text-align": "center", "margin-top": "50px"}))
-        ], style={'display': 'flex', 'align-items': 'center', 'justify-content': 'center'})
-    ], style={'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'height': '50vh', 'text-align': 'justify'}
-))
+grid1 = html.Div(
+    className="grid-container",
+    children=[
+        html.Div(
+            className="grid-row",
+            children=[
+                html.Div(
+                    className="grid-col",
+                    children=[
+                        html.P(html.H5("Bem-vindo(a), " ,className='h5')),
+                        html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Freelancer de Business Intelligence.", className='hp'),
+                    ]
+                ),
+                html.Div(
+                    className="grid-col",
+                    children=[
+                        html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo", 
+                                        height="200px", style={"border-radius": "50%"}))
+                    ]
+                )
+            ]
+        )
+    ]
+)
 
 
 card = dbc.Card(
     dbc.CardBody(grid1),
     className='card-container',
-    #style={#"background-image": "linear-gradient(to bottom right, #007bff, #000000)", 
-     #     'height':'80%', 'margin-left':'30px'}
 )
-
-
 
 content = dbc.Container(
-    dbc.Row(
-        dbc.Col(
-            card,
-            width={"size": 12, "md": 6},
-            className="mt-5 d-flex align-items-center justify-content-center",
-            style={"height": "65vh"}
-        )
-    ),
-    fluid=True,
-    style={
-        "height": "93.5vh",
-        #"background-image": "linear-gradient(to bottom right, #007bff, #000000)",
-        "display": "flex"
-    }
+    card
 )
 
-app.layout = html.Div([navbar,                        
-                       content,                       
-                       footer                       ], 
-                       style={#"background-image": "linear-gradient(to bottom right, #007bff, #000000)",
-                              "min-height": "100vh",
-                              "background-size":"cover"})
+
+
+app.layout = html.Div(
+    [
+        navbar,                      
+        grid1,                       
+        footer                      
+    ], 
+)
 
 if __name__ == "__main__":
     app.run_server(port=8000, debug=True)
