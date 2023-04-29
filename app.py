@@ -46,28 +46,29 @@ footer = dbc.Container(
 
 grid2 = dbc.Container([
     dbc.Row([
+    dbc.Col([
+        html.Div(className="d-flex", children=[
+            html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo",
+            height="200px", style={"border-radius": "50%", "margin-left": "0px", })),
+        ])
+    ], width=12),
+        
         dbc.Col([
             html.Div([
                 html.P([html.H5("Bem-vindo(a), " ,className='h5')]),
                 html.P("Meu nome é João Pedro do Carmo Costa Santos, sou Engenheiro de Produção, atualmente trabalhando como Analista de Custos e como Consultor Freelancer de Business Intelligence.", className='hp'),
                     dbc.Row([
                         dbc.Col([
-                            dbc.Button("Projetos", className="btn", style={"width":"100%"})
+                            dbc.Button("Projetos", className="btn", style={"width":"80%"})
                     ], width=6),
                         dbc.Col([
-                            dbc.Button("Sobre mim", className="btn", style={"width":"100%"})
+                            dbc.Button("Sobre mim", className="btn", style={"width":"80%"})
                     ], width=6),
                     ])       
             ])
-            ],width=6),
-        dbc.Col([
-            html.Div([
-                html.A(html.Img(src="https://media.licdn.com/dms/image/D4D03AQFP4olXaQdzGw/profile-displayphoto-shrink_800_800/0/1680175468993?e=1687996800&v=beta&t=xDFEeXdRTFn5plY_xP9ZTv-Xs703V9CBfAHsJSOFjlo", 
-                height="200px", style={"border-radius": "50%", "margin-left": "30px"})),
-            ])
-    ],width=6)
+            ],width=12)
     ])
-])
+],style={'margin-top':'100px'})
 
 
 card = dbc.Container(
@@ -82,7 +83,7 @@ app.layout = html.Div(
     [
         navbar,     
             html.Div(className='container-fluid',children=[       
-                card
+                grid2
             ]),   
         footer                      
     ], 
