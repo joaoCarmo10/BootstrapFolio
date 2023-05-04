@@ -1,0 +1,60 @@
+@media screen and (max-width: 771px) {
+    .imagem-coluna {
+      display: none;
+    }
+  }
+
+/*@media screen and (min-width: 850px) {
+    .cardcover {
+     /* margin:30vh;
+      margin-top: 25vh;
+      margin-bottom: 25vh;
+      width: 800px;
+      height: 500px;
+    }
+  }
+
+
+@media screen and (max-width: 849px) {
+    .cardcover {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 25vh;
+      margin-bottom: 25vh
+    }
+    .card {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 25vh;
+      margin-bottom: 25vh
+    }
+  }*/
+
+
+    
+
+
+
+.navbar-transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.body {
+background: linear-gradient(-4deg, lightblue,#1a1a1a, blue, #2c2c2c);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
