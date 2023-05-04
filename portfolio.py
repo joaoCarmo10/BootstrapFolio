@@ -123,7 +123,7 @@ grid1 =html.Div([
                     html.P("Baiana Business school (2022 - Atual)", className="card-title", style={'text-align':'center'}),
                     html.P("MBA em Gestão", style={'text-align':'center'})
                 ])
-            ], style={"background-color": "black", 'margin-left':'50px', 'margin-right':'50px', 'margin-botton':'25vh'})   
+            ], style={"background-color": "black", 'margin-left':'50px', 'margin-right':'50px', 'margin':'auto'})   
         ], xs=12, sm=12, lg=4, md=4),
         dbc.Col([
             dbc.Card([
@@ -132,7 +132,7 @@ grid1 =html.Div([
                     html.P("Centro Universitário Senai Cimatec (2016 - 2021)", className="card-title", style={'text-align':'center'}),
                     html.P("Graduação em Engenharia", style={'text-align':'center'})
                 ])
-            ], style={"background-color": "black", 'margin-left':'50px', 'margin-right':'50px', 'margin-botton':'25vh'}) 
+            ], style={"background-color": "black", 'margin-left':'50px', 'margin-right':'50px', 'margin':'auto'}) 
         ], xs=12, sm=12, lg=4, md=4) ,
         dbc.Col([
             dbc.Card([
@@ -141,8 +141,8 @@ grid1 =html.Div([
                     html.P("Centro Universitário Senai Cimatec (2016 - 2021)", className="card-title", style={'text-align':'center'}),
                     html.P("Graduação em Engenharia", style={'text-align':'center'})
                 ])
-            ], style={"background-color": "black", 'margin-left':'50px', 'margin-right':'50px', 'margin-botton':'25vh'})
-        ], xs=12, sm=12, lg=4, md=4)
+            ], style={"background-color": "black", 'margin-left':'50px', 'margin-right':'50px', 'margin':'auto'})
+        ], xs=12, sm=12, lg=4, md=4),
     ])
     ,html.Br()
 ])
